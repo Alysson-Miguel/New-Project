@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.conteudo {
+    text-align: center;
+    
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+@media only screen and (max-width: 600px) {
+    .conteudo {
+        padding: 10px;
+    }
+}
+/* Assim eu consigo deixar centralizado */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+input{
+    display: block;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 8px;
+    border: 0.1px solid rgba(184, 172, 134, 0.582) ;
+}
