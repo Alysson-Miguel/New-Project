@@ -24,4 +24,6 @@ function soma(){
 }
 
 
-
+const novidades = () => {
+    location.href = '../novidades/novidades.html'
+}
