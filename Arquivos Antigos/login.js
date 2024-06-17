@@ -9,7 +9,7 @@
             alert("A senha deve ter pelo menos 8 caracteres.");
             return false;
         }
-        return window.location.href = '../Newpage/home.html';
+        return window.location.href = '../Arquivos Antigos/Newpage/home.html';
     }
     const validarEmail = (email) => {
         var caracteres = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
