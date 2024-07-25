@@ -14,21 +14,25 @@ import {
 export default function Main() {
     return (
         <>
-        <Carousel className="w-1/2 h-2/2 m-auto top-2">
+        <Carousel className="relative w-1/2 h-2/2 m-auto mb-5 ">
             <CarouselContent >
               <CarouselItem>
-                  <Image src={ImgSale1} alt="Imagem 1" width={300} className="w-full h-auto"  />
+                  <Image src={ImgSale2} alt="Imagem 1"  className="w-full h-auto"  />
               </CarouselItem>
               <CarouselItem>
-                  <Image src={ImgSale2} alt="Imagem 1"  className="w-full h-auto"  />
+                  <Image src={ImgSale1} alt="Imagem 1"  className="w-full h-auto"  />
               </CarouselItem>
               <CarouselItem>
                   <Image src={ImgSale3} alt="Imagem 1"  className="w-full h-auto"/>
               </CarouselItem>
             </CarouselContent>
+            <CarouselNext />
+            <CarouselPrevious />
         </Carousel>
 
 
         </>
     )
 }
+
+

@@ -10,7 +10,7 @@ import {
   } from "@/components/ui/card"
   import Image from "next/image";
   import ImgSale1 from "../../public/img1.jpg"
-
+  import ImgSale2 from "../../public/img2.jpg"
   import ImgSale3 from "../../public/img3.jpg"
 import { Button } from "./ui/button";
 ;
@@ -21,18 +21,13 @@ export default function Products(){
     return (
         <>
         
-        <h1>Nossos Principais Produtos</h1>
-        <Separator className="items-center" />
-        <Tabs defaultValue="account" className="w-[400px]">
-  <TabsList>
-    <TabsTrigger value="Em Oferta">Em Oferta</TabsTrigger>
-    <TabsTrigger value="Mais Vendidos">Mais Vendidos</TabsTrigger>
-  </TabsList>
-  <TabsContent value="Em Oferta" className="" >  
-    <div className="" >
+    
 
 
-<Card  >
+<div className="flex items-center justify-center">
+
+
+<Card className="ma"  >
   <CardHeader>
     <CardTitle>Produto 1</CardTitle>
     <CardDescription>Em Oferta</CardDescription>
@@ -41,9 +36,10 @@ export default function Products(){
     <Image src={ImgSale1} alt="Imagem 1" className="w-full h-auto" width={200}  />
   </CardContent>
   <CardFooter>
-    <p>Card Footer</p>
+    <p>$100</p>
+    <Button  className="bg-green-600"  >Comprar</Button>
   </CardFooter>
-  <Button  className="bg-green-600"  >Comprar</Button>
+  
 </Card>
 
 <Card>
@@ -52,13 +48,12 @@ export default function Products(){
     <CardDescription>Em Oferta</CardDescription>
   </CardHeader>
   <CardContent>
-  <Image src={ImgSale3} alt="Imagem 1" width={200} className="w-full h-auto"  />
+  <Image src={ImgSale2} alt="Imagem 1" width={200} className="w-full h-auto"  />
   </CardContent>
   <CardFooter>
-        <p>Card Footer</p>
+    <p>$200</p>
+    <Button  className="bg-green-600"  >Comprar</Button>
   </CardFooter>
-  <Button className="bg-green-600" >Comprar</Button>
-  
 </Card>
 
 <Card>
@@ -70,63 +65,59 @@ export default function Products(){
   <Image src={ImgSale3} alt="Imagem 1" width={200} className="w-full h-auto"  />
   </CardContent>
   <CardFooter>
-    <p>Card Footer</p>
+    <p>$100</p>
+    <Button  className="bg-green-600"  >Comprar</Button>
   </CardFooter>
-  <Button className="bg-green-600">Comprar</Button>
 </Card>
 
+</div>
 
-</div></TabsContent>
-  <TabsContent value="Mais Vendidos">  
-    <div className="">
+<div className="flex items-center justify-center">
 
 
 <Card>
   <CardHeader>
-    <CardTitle>Produto 1</CardTitle>
+    <CardTitle>Produto 4</CardTitle>
     <CardDescription>Em Oferta</CardDescription>
   </CardHeader>
   <CardContent>
     <Image src={ImgSale3} alt="Imagem 1" width={200} className="w-full h-auto" />
   </CardContent>
   <CardFooter>
-    <p>Card Footer</p>
+    <p>$300</p>
+    <Button  className="bg-green-600"  >Comprar</Button>
   </CardFooter>
-  <Button className="bg-green-600">Comprar</Button>
 </Card>
 
 <Card>
   <CardHeader>
-    <CardTitle>Produto 2</CardTitle>
+    <CardTitle>Produto 5</CardTitle>
     <CardDescription>Em Oferta</CardDescription>
   </CardHeader>
   <CardContent>
   <Image src={ImgSale1} alt="Imagem 1" width={200} className="w-full h-auto" />
   </CardContent>
   <CardFooter>
-        <p>Card Footer</p>
+    <p>$200</p>
+    <Button  className="bg-green-600"  >Comprar</Button>
   </CardFooter>
-  <Button  className="bg-green-600">Comprar</Button>
   
 </Card>
 
 <Card>
   <CardHeader>
-    <CardTitle>Produto 3</CardTitle>
+    <CardTitle>Produto 6</CardTitle>
     <CardDescription>Em Oferta</CardDescription>
   </CardHeader>
   <CardContent>
-  <Image src={ImgSale1} alt="Imagem 1" width={200}  className="w-full h-auto"/>
+  <Image src={ImgSale2} alt="Imagem 1" width={200}  className="w-full h-auto"/>
   </CardContent>
   <CardFooter>
-    <p>Card Footer</p>
+    <p>$400</p>
+    <Button  className="bg-green-600"  >Comprar</Button>
   </CardFooter>
-  <Button  className="bg-green-600">Comprar</Button>
 </Card>
-
-
-</div></TabsContent>
-</Tabs>
+</div>
 
         
         </>

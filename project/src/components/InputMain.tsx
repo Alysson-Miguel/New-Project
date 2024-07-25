@@ -6,8 +6,9 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select"
+import "@/app/globals.css"
 
-import Image from "next/image";
+
 
 import * as React from "react"
 
@@ -16,13 +17,11 @@ import * as React from "react"
 export default function InputMain() {
     return (
       <>
-  
-      <section className="flex justify-center gap-5 mt-3" >
+<div className="flex items-center justify-center " >
+<form action="" className="gap-8 flex items-center mt-20 mb-6" > 
 
-      <Input className="w-1/6"  placeholder="Location..."  />
-      <Input className="w-2/6" placeholder="Search..."  />
-  
-      <Select>
+<Input placeholder="Search..." className="min-w-max"  />
+<Select>
         <SelectTrigger  className="w-[110px]" >
           <SelectValue placeholder="Category" />
         </SelectTrigger>
@@ -33,7 +32,14 @@ export default function InputMain() {
           <SelectItem value="shoes">shoes</SelectItem>
         </SelectContent>
       </Select>
-      </section>
+
+</form>
+</div>
+
+      
+  
+
+
 
 
 
