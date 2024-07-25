@@ -10,13 +10,9 @@ export default function Home() {
   return (
     <>
       <Header/>
-      <InputMain/>
-      <div className="container mx-auto">
-        <Main />
-
-      </div>
-      
-      <Products/>
+      {/* <InputMain/> */}
+      {/* <Main /> */}
+      {/* <Products/> */}
       
 
     </>
